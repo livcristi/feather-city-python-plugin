@@ -386,8 +386,3 @@ class PythonAnalyser(Analyser):
             help="Comma-separated list of filename patterns to exclude (e.g., '*.log,*.tmp'). Supports fnmatch.",
         )
         return parser
-
-
-if __name__ == "__main__":
-    analyser = PythonAnalyser()
-    print(analyser.analyse(r"D:\MasterThesis\MasterThesis").model_dump_json())
