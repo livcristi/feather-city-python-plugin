@@ -1,0 +1,11 @@
+[project]
+name = "python-analyser-plugin"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["feather-city>=0.1.2"]
+
+[project.optional-dependencies]
+dev = ["black"]
+
+[project.entry-points."visualiser.plugins"]
+python = "python_analyser_plugin.python_analyser:PythonAnalyser"
